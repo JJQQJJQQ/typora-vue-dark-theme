@@ -11,8 +11,8 @@
 
 1. 从 [release page](https://github.com/MamoruDS/typora-vue-theme/releases/) 下载主题包，其中包含主题文件`vue-dark.css`、`vue-dark-snappy.css`和以及包含字体的`vue`文件夹。
 2. 打开 Typora，点击“**偏好设置**” => “**打开主题文件夹**”按钮，将弹出 Typora 的主题文件夹；
-3. 将下载好的`vue-dark.css`及`vue-dark-snappy.css`文件和包含字体的`vue`文件夹放到 Typora 的主题文件夹中；
-4. 关闭并重新打开 Typora，从菜单栏中选择 “**主题**” => “**Vue Dark**”或“**Vue Dark Snappy**”即可。
+3. 将下载好的`vue-dark.css`,`vue-dark-snappy.css`及`vue-dark-oceanicnext.css`文件和包含字体的`vue`文件夹放到 Typora 的主题文件夹中；
+4. 关闭并重新打开 Typora，从菜单栏中选择 “**主题**” => “**Vue Dark**”、“**Vue Dark Snappy**”或“**Vue Dark Oceanicnext**”即可。
 
 ## 效果图
 
