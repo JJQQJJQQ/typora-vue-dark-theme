@@ -2,6 +2,7 @@
     --fg-color: #ffffff;
     --bg-color: #1f1f1f;
     --bg-trans-d: hsla(0, 0%, 0%, 20%);
+    --bg-trans-l: hsla(0, 0%, 100%, 10%);
     --theme-vim-yl: #f3b37f;
     --theme-vim-gn: #41b883;
     --theme-vim-bl: #22a2c9;
@@ -940,4 +941,19 @@ html {
 .CodeMirror div.CodeMirror-cursor {
     border-left: 5px solid var(--theme-vim-gn);
     z-index: 3;
+}
+
+.form-control {
+    background-color: var(--bg-trans-d);
+    border-color: var(--bg-color);
+}
+
+.modal-header,
+.modal-footer {
+    border-color: var(--bg-trans-l);
+    border-width: 2px;
+}
+
+.btn:hover {
+    background-color: var(--theme-vim-gn);
 }
