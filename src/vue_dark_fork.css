@@ -1,12 +1,16 @@
 :root {
+    --fg-color: #ffffff;
+    --bg-color: #1f1f1f;
+    --bg-trans-d: hsla(0, 0%, 0%, 20%); 
+    --theme-vim-yl: #f3b37f;
+    --theme-vim-gn: #41b883;
+    --theme-vim-bl: #22a2c9;
+    --table-bg: hsla(0, 0%, 100%, 6%);
+    --table-bg-dim: hsla(0, 0%, 100%, 2%);
     --side-bar-bg-color: #343333;
-    /* --side-bar-bg-color: #fff; */
-    --control-text-color: #ffffff;
-    /* --control-text-color: #777; */
-    /* --select-text-bg-color: hsla(153, 47%, 49%, 0.5); */
+    --control-text-color: #0e0808;
     --select-text-bg-color: hsl(153, 47%, 40%);
     --select-text-font-color: #fff;
-    --bg-color: #1d1d1d;
     --item-hover-bg-color: #fff;
 }
 
@@ -268,8 +272,8 @@ html {
 
 body {
     font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif !important;
-    color: #ffffff;
-    background-color: #1f1f1f;
+    color: var(--fg-color);
+    background-color: var(--bg-color);
     -webkit-font-smoothing: antialiased;
     line-height: 1.6rem;
     letter-spacing: 0;
@@ -309,7 +313,7 @@ body > *:last-child {
 }
 
 a {
-    color: #42b983;
+    color: var(--theme-vim-gn);
     font-weight: 600;
     padding: 0px 2px;
     text-decoration: none;
@@ -525,8 +529,12 @@ table tr {
 
 table tr:nth-child(2n),
 thead {
-    /* background-color: hsl(0, 0%, 2%); */
-    background-color: hsl(0, 0%, 10%);
+    background-color: var(--table-bg);
+}
+
+table tr,
+thead {
+    background-color: var(--table-bg-dim);
 }
 
 table tr th {
@@ -601,13 +609,13 @@ table tr td:last-child {
     font-family: Menlo, Source Sans Pro, Monaco, courier, monospace !important;
     font-weight: bold;
     font-size: 0.85rem;
-    color: #f3b37f;
-    background-color: hsla(0, 0%, 0%, 0.2);
+    color: var(--theme-vim-yl);
+    background-color: var(--bg-trans-d);
 }
 
 #write .md-footnote {
-    background-color: hsla(0, 0%, 0%, 0.2);
-    color: #f3b37f;
+    color: var(--theme-vim-yl);
+    background-color: var(--bg-trans-d);
 }
 
 /* heighlight. */
@@ -626,11 +634,11 @@ table tr td:last-child {
 
 .cm-s-inner .cm-link,
 .cm-s-inner.cm-link {
-    color: #22a2c9;
+    color: var(--theme-vim-bl);
 }
 
 .cm-s-inner .cm-string {
-    color: #22a2c9;
+    color: var(--theme-vim-bl);
 }
 
 .md-task-list-item > input {
@@ -755,7 +763,7 @@ footer {
 }
 
 .md-lang {
-    color: #42b983;
+    color: var(--theme-vim-gn);
 }
 
 .html-for-mac .context-menu {
@@ -807,7 +815,7 @@ footer {
 
 .outline-item:hover {
     background-color: rgba(0, 0, 0, 0.5);
-    color: #42b983;
+    color: var(--theme-vim-gn);
 }
 
 .sidebar-footer {
@@ -845,15 +853,15 @@ html{
 }
 
 .autoComplt-hint {
-    color: #42b983 !important;
+    color: var(--theme-vim-gn) !important;
     /* border-color: transparent !important */
 }
 
 .auto-suggest-container {
-    color: #42b983 !important;
+    color: var(--theme-vim-gn) !important;
     font-family: Menlo, Source Sans Pro, Monaco, courier, monospace !important;
     font-weight: bold !important;
-    border-color: #42b983 !important;
+    border-color: var(--theme-vim-gn) !important;
     border-radius: 8px !important;
     border-width: 2px !important;
     margin-top: 5px;
@@ -868,7 +876,7 @@ html{
 
 .auto-suggest-container li:hover {
     color: #fff !important;
-    background-color: #42b983 !important;
+    background-color: var(--theme-vim-gn) !important;
     /* text-align: right !important; */
 }
 
@@ -878,21 +886,15 @@ html{
 /* } */
 
 .typora-sourceview-on #toggle-sourceview-btn{
-    background-color: #42b983
+    background-color: var(--theme-vim-gn);
 }
 
 /* cursor */
 .CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
-    border-left: 5px solid #42b983;
+    border-left: 5px solid var(--theme-vim-gn);
 }
 
 .CodeMirror div.CodeMirror-cursor {
-    border-left: 5px solid #42b983;
+    border-left: 5px solid var(--theme-vim-gn);
     z-index: 3;
 }
-
-/* selected text */
-/* .CodeMirror-selecte { */
-    /* background-color: hsla(153, 47%, 49%, 0.5) !important; */
-    /* color: #fff !important; */
-/* } */
