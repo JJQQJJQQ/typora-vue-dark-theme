@@ -558,7 +558,7 @@ blockquote {
 }
 
 table {
-    font-family: Menlo, Source Sans Pro, Monaco, courier, monospace !important;
+    font-family: Roboto Mono, Source Sans Pro, Monaco, courier, monospace !important;
     font-size: 0.85rem;
     padding: 0;
     word-break: initial;
@@ -633,7 +633,7 @@ table tr td:last-child {
     color: hsl(0, 0%, 78%);
     background-color: hsl(0, 0%, 10%) !important;
     border-radius: 2px;
-    font-family: Menlo, Source Sans Pro, Monaco, courier, monospace !important;
+    font-family: Roboto Mono, Source Sans Pro, Monaco, courier, monospace !important;
     font-weight: bold;
     font-size: 0.85rem;
     word-wrap: normal;
@@ -648,7 +648,7 @@ tt {
     margin: 0 2px;
     padding: 2px 4px;
     border-radius: 2px;
-    font-family: Menlo, Source Sans Pro, Monaco, courier, monospace !important;
+    font-family: Roboto Mono, Source Sans Pro, Monaco, courier, monospace !important;
     font-weight: bold;
     font-size: 0.85rem;
     color: var(--theme-vim-yl);
@@ -813,7 +813,7 @@ footer {
 }
 
 #typora-sidebar {
-    /* font-family: Menlo, Source Sans Pro, Monaco, courier, monospace !important; */
+    /* font-family: Roboto Mono, Source Sans Pro, Monaco, courier, monospace !important; */
     font-family: Helvetica, Arial !important;
     font-weight: bold;
 }
@@ -837,7 +837,7 @@ footer {
 
 #toc-dropmenu {
     background: hsl(0, 0%, 18%) !important;
-    /* font-family: Menlo, Source Sans Pro, Monaco, courier, monospace !important; */
+    /* font-family: Roboto Mono, Source Sans Pro, Monaco, courier, monospace !important; */
     font-weight: bold;
 }
 
@@ -902,7 +902,7 @@ html {
 
 .auto-suggest-container {
     color: var(--theme-vim-gn) !important;
-    font-family: Menlo, Source Sans Pro, Monaco, courier, monospace !important;
+    font-family: Roboto Mono, Source Sans Pro, Monaco, courier, monospace !important;
     font-weight: bold !important;
     border-color: var(--theme-vim-gn) !important;
     border-radius: 8px !important;
