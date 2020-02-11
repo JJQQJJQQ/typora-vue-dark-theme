@@ -144,6 +144,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
     --select-text-bg-color: hsl(153, 47%, 40%);
     --select-text-font-color: #fff;
     --item-hover-bg-color: #fff;
+    --fence-bg: hsl(0, 0%, 10%);
 }
 
 /* cyrillic-ext */
@@ -763,7 +764,7 @@ table tr td:last-child {
     padding: 0.3rem 0rem !important;
     line-height: 1.43rem;
     color: hsl(0, 0%, 78%);
-    background-color: hsl(0, 0%, 10%) !important;
+    background-color: var(--fence-bg) !important;
     border-radius: 2px;
     font-family: Roboto Mono, Source Sans Pro, Monaco, courier, monospace !important;
     font-weight: bold;
@@ -1087,6 +1088,18 @@ html {
 
 .btn:hover {
     background-color: var(--theme-vim-gn);
+}
+
+.md-rawblock-on-edit > .md-rawblock-tooltip,
+.md-rawblock:hover > .md-rawblock-container,
+.md-rawblock:hover > .md-rawblock-tooltip {
+    transition: background 0.5s linear;
+    background-color: var(--fence-bg) !important;
+    display: block;
+}
+
+.md-rawblock-control:not(.md-rawblock-tooltip) {
+    background-color: var(--fence-bg) !important;
 }
 /* snappy scheme */
 .cm-s-inner .cm-keyword {
