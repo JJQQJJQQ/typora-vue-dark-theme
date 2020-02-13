@@ -1101,6 +1101,67 @@ html {
 .md-rawblock-control:not(.md-rawblock-tooltip) {
     background-color: var(--fence-bg) !important;
 }
+
+/* windows */
+
+:root {
+    --text-color: var(--fg-color);
+    --btn-border-color: hsla(0, 0%, 100%, 0.1);
+    --item-hover-bg-color: var(--select-text-bg-color);
+}
+
+.megamenu-menu-header {
+    border-color: var(--btn-border-color);
+}
+
+.megamenu-opened header {
+    background-image: none;
+}
+
+.megamenu-menu {
+    background-color: var(--side-bar-bg-color);
+}
+
+.megamenu-content {
+    background: var(--bg-color);
+}
+
+.modal-content {
+    border-color: var(--btn-border-color);
+}
+
+.long-btn {
+    border-color: var(--btn-border-color);
+}
+
+#recent-file-panel tbody tr:nth-child(2n-1) {
+    background-color: transparent;
+}
+
+footer.ty-footer {
+    border-top: 1px solid var(--table-bg);
+}
+
+#recent-file-panel-action-btn {
+    background-color: transparent;
+}
+
+/* improvement */
+
+.dropdown-menu {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 0 transparent;
+}
+
+p,
+blockquote,
+ul,
+ol,
+dl,
+table {
+    margin: 0.4em 0;
+    /*     margin: 0.8rem 0 0 0 ; */
+}
 /* snappy scheme */
 .cm-s-inner .cm-keyword {
     color: #f66153;
